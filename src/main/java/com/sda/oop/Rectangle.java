@@ -2,27 +2,29 @@ package com.sda.oop;
 
 public class Rectangle extends AShape {
 
-    private int bigLength;
-    private int smallLength;
+    private double bigSide;
+    private double smallSide;
 
-    public Rectangle(int bigLength, int smallLength) {
-        this.bigLength = bigLength;
-        this.smallLength = smallLength;
+    public Rectangle(double bigSide, double smallSide) {
+        this.bigSide = bigSide;
+        this.smallSide = smallSide;
     }
 
-    public int getBigLength() {
-        return bigLength;
+    public double getBigSide() {
+        return bigSide;
     }
 
-    public int getSmallLength() {
-        return smallLength;
+    public double getSmallSide() {
+        return smallSide;
     }
 
-    int getArea() {
-        return bigLength * smallLength;
+    @Override
+    public double getArea() {
+        return bigSide * smallSide;
     }
 
-    int getPerimeter() {
-        return 2 * bigLength + 2 * smallLength;
+    @Override
+    public double getPerimeter() {
+        return 2 * bigSide + 2 * smallSide;
     }
 }

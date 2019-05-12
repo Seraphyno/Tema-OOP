@@ -2,10 +2,10 @@ package com.sda.oop;
 
 public class Circle extends AShape {
 
-    private static final double PI = Math.PI;
+    private static final double PI = 3.14;
     private double radius;
 
-    Circle(double radius) {
+    public Circle(double radius) {
         this.radius = radius;
     }
 
@@ -13,11 +13,15 @@ public class Circle extends AShape {
         return radius;
     }
 
-    int getArea() {
-        return (int)(PI * radius * radius);
+    @Override
+    public double getArea() {
+//        Math.PI * radius * radius;
+        return PI * radius * radius;
     }
 
-    int getPerimeter() {
-        return (int)(2 * PI * radius);
+    @Override
+    public double getPerimeter() {
+//        2 * Math.PI * radius;
+        return 2 * PI * radius;
     }
 }

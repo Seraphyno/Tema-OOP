@@ -2,21 +2,33 @@ package com.sda.oop;
 
 public class Square extends AShape {
 
-    private int side;
+    private double side;
 
-    public Square(int side) {
+    public Square(double side) {
         this.side = side;
     }
 
-    public int getSide() {
+    public double getSide() {
         return side;
     }
 
-    int getArea() {
+    /**
+     * Returns shape's area
+     *
+     * @return area as double
+     */
+    @Override
+    public double getArea() {
         return side * side;
     }
 
-    int getPerimeter() {
+    /**
+     * Returns shape's perimeter
+     *
+     * @return perimeter as double
+     */
+    @Override
+    public double getPerimeter() {
         return 4 * side;
     }
 }
