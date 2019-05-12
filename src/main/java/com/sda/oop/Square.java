@@ -12,21 +12,11 @@ public class Square extends AShape {
         return side;
     }
 
-    /**
-     * Returns shape's area
-     *
-     * @return area as double
-     */
     @Override
     public double getArea() {
         return side * side;
     }
 
-    /**
-     * Returns shape's perimeter
-     *
-     * @return perimeter as double
-     */
     @Override
     public double getPerimeter() {
         return 4 * side;
