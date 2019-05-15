@@ -1,16 +1,16 @@
 package com.sda.oop;
 
-abstract class AShape {
+public abstract class AShape {
 
     /**
-     * Returns the shape's area
-     * @return area as integer
+     * Returns shape's area
+     * @return area as double
      */
-    abstract int getArea();
+    public abstract double getArea();
 
     /**
-     * Returns the shape's perimeter
-     * @return perimeter as integer
+     * Returns shape's perimeter
+     * @return perimeter as double
      */
-    abstract int getPerimeter();
+    public abstract double getPerimeter();
 }
