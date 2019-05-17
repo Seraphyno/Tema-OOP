@@ -1,6 +1,6 @@
 package com.sda.oop;
 
-public class Square extends AShape {
+public class Square implements IColor, IShape {
 
     private double side;
 
@@ -20,5 +20,25 @@ public class Square extends AShape {
     @Override
     public double getPerimeter() {
         return 4 * side;
+    }
+
+    @Override
+    public String getColor() {
+        return "RED";
+    }
+
+    @Override
+    public String getDescription() {
+        return null;
+    }
+
+    @Override
+    public String getName() {
+        return null;
+    }
+
+    @Override
+    public long getCode() {
+        return 123123L;
     }
 }

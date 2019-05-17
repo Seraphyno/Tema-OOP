@@ -14,11 +14,11 @@ public class Main {
 
     public static void main(String[] args) {
         AShape circle = new Circle(2);
-        AShape square = new Square(3);
+//        AShape square = new Square(3);
         AShape rectangle = new Rectangle(4,2);
 
         printShape(circle);
-        printShape(square);
+//        printShape(square);
         printShape(rectangle);
     }
 }
